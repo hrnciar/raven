@@ -49,4 +49,5 @@ setup(name='amsc',
                              include_dirs=include_dirs, swig_opts=swig_opts,extra_compile_args=extra_compile_args)],
       package_dir={'':'src/contrib'},
       py_modules=['amsc'],
-      cmdclass={'build': CustomBuild})
+      cmdclass={'build': CustomBuild},
+      install_requires='setuptools')
